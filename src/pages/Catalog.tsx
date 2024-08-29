@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { StyleSheet, Text, View, Image, TouchableOpacity, ScrollView } from 'react-native';
-import Card from '../../components/cardbox';
-import CardInfo from '../../components/cardInfo';
+import Card from '../components/cardbox';
+import CardInfo from '../components/cardInfo';
 
 const Catalog = () => {
   const [pokemonList, setPokemonList] = useState<any[]>([]);

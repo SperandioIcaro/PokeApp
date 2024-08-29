@@ -8,8 +8,9 @@ export function Home() {
   
   return (
       <View style={styles.container}>
-        <Image style={styles.logo} source={require('../../../assets/logo.png')} />
-        <Button title='Catalogo' onPress={() => navigation.navigate("Catalog")} />
+        <Image style={styles.logo} source={require('../../assets/logo.png')} />
+        <Button style={styles.bottom} title='Quem e esse pokemon?' onPress={() => navigation.navigate("ScanPM")} />
+        <Button style={styles.bottom} title='Catalogo' onPress={() => navigation.navigate("Catalog")} />
       </View>
   );
 }
@@ -31,4 +32,7 @@ const styles = StyleSheet.create({
     height: 140,
     margin: 16,
   },
+  bottom: {
+    marginBottom: 10
+  }
 });
